@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Constru Plus Energy — Energía Solar, Servicios Eléctricos y Remodelaciones. Soluciones energéticas innovadoras para hogares e industrias." />
+  <title>Constru Plus Energy | Inicio</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header class="header">
+    <a href="/" class="logo">
+      <img src="/assets/logo.png" alt="Constru Plus Energy" />
+      <div class="logo-text">
+        <span>CONSTRU PLUS</span>
+        <span>ENERGY</span>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="/">Inicio</a>
+      <a href="/sobre-nosotros">Nosotros</a>
+      <a href="/servicios">Servicios</a>
+      <a href="/proyectos">Proyectos</a>
+      <a href="/contacto">Contacto</a>
+      <a href="https://calcula-tu-ahorro.construplusenergy.com/" class="nav-cta" target="_blank" rel="noopener">Simula tu inversión</a>
+    </nav>
+    <button class="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">Energía del Futuro, Hoy</div>
+        <h1 class="hero-title">
+          Construimos el<br />
+          <span class="highlight">futuro energético</span><br />
+          <span class="highlight-teal">de tu hogar</span>
+        </h1>
+        <p class="hero-desc">
+          Especialistas en energía solar fotovoltaica, instalaciones eléctricas y remodelaciones. Transformamos espacios y reducimos tu huella energética.
+        </p>
+        <div class="hero-buttons">
+          <a href="/servicios" class="btn btn-primary">
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            Nuestros Servicios
+          </a>
+          <a href="https://calcula-tu-ahorro.construplusenergy.com/" class="btn btn-secondary" target="_blank" rel="noopener">
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-3M13 3h8m0 0v8m0-8L11 13"/></svg>
+            Simula tu inversión
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat-item">
+            <span class="stat-num counter" data-target="30" data-suffix="+">0+</span>
+            <span class="stat-label">Proyectos realizados</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="stat-num counter" data-target="2" data-suffix=" años">0 años</span>
+            <span class="stat-label">De experiencia</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="stat-num counter" data-target="100" data-suffix="%">0%</span>
+            <span class="stat-label">Clientes satisfechos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="solar-hero-anim">
+
+          <!-- Sol con rayos rotatorios -->
+          <div class="anim-sun">
+            <div class="sun-rays-wrap">
+              <span class="sun-ray"></span><span class="sun-ray"></span>
+              <span class="sun-ray"></span><span class="sun-ray"></span>
+              <span class="sun-ray"></span><span class="sun-ray"></span>
+              <span class="sun-ray"></span><span class="sun-ray"></span>
+            </div>
+            <div class="sun-body"></div>
+          </div>
+
+          <!-- Rayos de luz hacia el panel -->
+          <svg class="light-beams-svg" viewBox="0 0 280 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="140" y1="0" x2="40"  y2="90" stroke="url(#bg1)" stroke-width="1.5"/>
+            <line x1="140" y1="0" x2="90"  y2="90" stroke="url(#bg1)" stroke-width="1"/>
+            <line x1="140" y1="0" x2="140" y2="90" stroke="url(#bg1)" stroke-width="2.5"/>
+            <line x1="140" y1="0" x2="190" y2="90" stroke="url(#bg1)" stroke-width="1"/>
+            <line x1="140" y1="0" x2="240" y2="90" stroke="url(#bg1)" stroke-width="1.5"/>
+            <defs>
+              <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+                <stop offset="0"   stop-color="#F7941D" stop-opacity="0.9"/>
+                <stop offset="1"   stop-color="#1B8FA0" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <!-- Panel solar 3D -->
+          <div class="anim-panel-wrap">
+            <div class="anim-panel">
+              <div class="panel-frame-bar panel-frame-top"></div>
+              <div class="panel-cells" id="panelCells">
+                <!-- celdas generadas por JS -->
+              </div>
+              <div class="panel-frame-bar panel-frame-bottom"></div>
+              <div class="panel-reflection"></div>
+            </div>
+            <div class="panel-mount"></div>
+
+            <!-- Partículas de energía fluyendo -->
+            <div class="energy-flow-line">
+              <span class="e-particle" style="--pd:2.4s"></span>
+              <span class="e-particle" style="--pd:2.9s"></span>
+              <span class="e-particle" style="--pd:3.4s"></span>
+              <span class="e-particle" style="--pd:3.9s"></span>
+            </div>
+
+            <!-- Tarjetas de datos flotantes -->
+            <div class="sol-stat sol-stat-1">
+              <div class="sol-stat-val">9.2 kW</div>
+              <div class="sol-stat-lbl">Potencia</div>
+            </div>
+            <div class="sol-stat sol-stat-2">
+              <div class="sol-stat-val" style="color:var(--teal)">98%</div>
+              <div class="sol-stat-lbl">Eficiencia</div>
+            </div>
+            <div class="sol-stat sol-stat-3">
+              <div class="sol-stat-val" style="color:#64C864">0 kg</div>
+              <div class="sol-stat-lbl">CO₂</div>
+            </div>
+
+            <!-- Arco de carga circular -->
+            <svg class="charge-arc" viewBox="0 0 120 120">
+              <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(27,143,160,0.1)" stroke-width="3"/>
+              <circle cx="60" cy="60" r="52" fill="none" stroke="url(#arcGrad)" stroke-width="3"
+                stroke-linecap="round" stroke-dasharray="326" stroke-dashoffset="326"
+                class="charge-arc-fill"/>
+              <defs>
+                <linearGradient id="arcGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#F7941D"/>
+                  <stop offset="1" stop-color="#1B8FA0"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- ── SERVICIOS PREVIEW ── -->
+  <section>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Lo que hacemos</span>
+        <h2 class="section-title">Nuestros <span>Servicios</span></h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Ofrecemos soluciones integrales en energía renovable, instalaciones eléctricas y construcción para llevar tu proyecto al siguiente nivel.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon-wrap solar">☀️</div>
+          <h3>Energía Solar Fotovoltaica</h3>
+          <p>Diseño, instalación y mantenimiento de sistemas fotovoltaicos residenciales, comerciales e industriales. Reduce tu factura energética hasta un 90%.</p>
+          <a href="/servicios#solar" class="service-link">Ver más →</a>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon-wrap electr">⚡</div>
+          <h3>Servicios Eléctricos</h3>
+          <p>Instalaciones eléctricas completas para proyectos residenciales, comerciales e industriales. Cumplimiento de normas y máxima seguridad.</p>
+          <a href="/servicios#electrico" class="service-link">Ver más →</a>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon-wrap remod">🏗️</div>
+          <h3>Remodelaciones</h3>
+          <p>Servicios de arquitectura y construcción para transformar espacios con diseño moderno, funcional y de alta calidad.</p>
+          <a href="/servicios#remodelacion" class="service-link">Ver más →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATS ── -->
+  <div class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-number counter" data-target="10" data-suffix="+">0+</div>
+          <div class="stat-label">Instalaciones Solares</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-1">
+          <div class="stat-number counter" data-target="30" data-suffix="+">0+</div>
+          <div class="stat-label">Proyectos Eléctricos</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <div class="stat-number counter" data-target="10" data-suffix="+">0+</div>
+          <div class="stat-label">Remodelaciones</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <div class="stat-number counter" data-target="2" data-suffix=" años">0 años</div>
+          <div class="stat-label">De Experiencia</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── POR QUÉ ELEGIRNOS ── -->
+  <section>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Nuestras ventajas</span>
+        <h2 class="section-title">¿Por qué elegir <span>Constru Plus Energy</span>?</h2>
+        <div class="divider"></div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+        <div class="card reveal reveal-delay-1">
+          <div class="card-icon icon-orange">🏆</div>
+          <h3>Experiencia comprobada</h3>
+          <p>Técnicos altamente capacitados para solventar los problemas, con profesionalismo y valores.</p>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <div class="card-icon icon-teal">🔬</div>
+          <h3>Tecnología de vanguardia</h3>
+          <p>Utilizamos equipos y materiales de primera calidad, con las últimas tecnologías del mercado solar y eléctrico.</p>
+        </div>
+        <div class="card reveal reveal-delay-3">
+          <div class="card-icon icon-orange">📋</div>
+          <h3>Soluciones a medida</h3>
+          <p>Cada proyecto es único. Analizamos tus necesidades y diseñamos la solución más eficiente y rentable para ti.</p>
+        </div>
+        <div class="card reveal reveal-delay-4">
+          <div class="card-icon icon-teal">🛡️</div>
+          <h3>Garantía y soporte</h3>
+          <p>Respaldamos nuestros trabajos con garantía completa y servicio post-venta para que siempre estés cubierto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROYECTOS PREVIEW ── -->
+  <section style="background: linear-gradient(135deg, rgba(27,143,160,0.04), transparent);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Nuestro trabajo</span>
+        <h2 class="section-title">Proyectos <span>Destacados</span></h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Conoce algunos de los proyectos que hemos realizado para nuestros clientes.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-thumb" style="padding:0; overflow:hidden;">
+              <img src="/assets/proyecto-solar-1.jpg" alt="Sistema Solar Residencial"
+                  style="width:100%; height:100%; object-fit:cover; display:block;" />
+              <span class="project-badge badge-solar">Solar</span>
+          </div>
+          <div class="project-info">
+            <h3>Sistema Solar Residencial</h3>
+            <p>Instalación de 6 paneles solares en vivienda unifamiliar. Ahorro del 85% del consumo mensual.</p>
+            <div class="project-meta">
+              <span>📍 San Miguel</span>
+              <span>⚡ 3.6 kW</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-thumb" style="padding:0; overflow:hidden;">
+              <img src="/assets/proyecto-electrico-1.jpeg" alt="Sistema Solar Residencial"
+                  style="width:100%; height:100%; object-fit:cover; display:block;" />
+              <span class="project-badge badge-solar">Constructivo</span>
+          </div>
+          <div class="project-info">
+            <h3>Unificación de cargas e instalación de tableros eléctricos</h3>
+            <p>Instalación de protecciones eléctricas en el tablero general.</p>
+            <div class="project-meta">
+              <span>📍 La costa del Sol</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-thumb" style="padding:0; overflow:hidden;">
+              <img src="/assets/proyecto-remo-1.jpeg" alt="Sistema Solar Residencial"
+                  style="width:100%; height:100%; object-fit:cover; display:block;" />
+              <span class="project-badge badge-solar">Constructivo</span>
+          </div>
+          <div class="project-info">
+            <h3>Impermeabilización interna</h3>
+            <p>Preparación de superficies mediante limpieza técnica, refuerzo cementicio y sellado para evitar filtraciones.</p>
+            <div class="project-meta">
+              <span>📍 Mejicanos</span>
+              <span>📐 20 m²</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 2.5rem;" class="reveal">
+        <a href="/proyectos" class="btn btn-secondary">Ver todos los proyectos →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA SIMULA TU INVERSIÓN ── -->
+  <section>
+    <div class="container">
+      <div class="cta-section reveal">
+        <span class="section-tag">Calculadora online</span>
+        <h2>¿Cuánto necesitas invertir en <span style="color: var(--orange);">energía solar</span>?</h2>
+        <p>Ingresa tu consumo en kW y obtén una cotización estimada del sistema solar ideal para tu hogar o negocio..</p>
+        <a href="https://calcula-tu-ahorro.construplusenergy.com/" class="btn btn-primary" target="_blank" rel="noopener">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-3M13 3h8m0 0v8m0-8L11 13"/></svg>
+          Cotiza tu sistema ahora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo" style="margin-bottom: 0.5rem;">
+            <img src="/assets/logo.png" alt="Constru Plus Energy" />
+            <div class="logo-text">
+              <span>CONSTRU PLUS</span>
+              <span>ENERGY</span>
+            </div>
+          </a>
+          <p>Especialistas en energía solar, servicios eléctricos y remodelaciones. Construimos el futuro energético de tu hogar y empresa.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/1DhS5N5kwB/?mibextid=wwXIfr" class="social-btn fb" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/construplusenergy?igsh=N2xpNG1tMXdidHR6" class="social-btn ig" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://wa.me/50374163834" class="social-btn wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Páginas</h4>
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/proyectos">Proyectos</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="/servicios#solar">Energía Solar</a></li>
+            <li><a href="/servicios#electrico">Eléctrica Residencial</a></li>
+            <li><a href="/servicios#electrico">Eléctrica Industrial</a></li>
+            <li><a href="/servicios#remodelacion">Remodelaciones</a></li>
+            <li><a href="https://calcula-tu-ahorro.construplusenergy.com/" target="_blank" rel="noopener">Simula tu inversión ⚡</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="/contacto">📧 info@construplusenergy.com</a></li>
+            <li><a href="https://wa.me/50374163834" target="_blank" rel="noopener">📱 WhatsApp</a></li>
+            <li><a href="#" target="_blank" rel="noopener">📘 Facebook</a></li>
+            <li><a href="#" target="_blank" rel="noopener">📸 Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Constru Plus Energy. Todos los derechos reservados.</span>
+        <span class="built-by">Diseño web profesional</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── WHATSAPP FLOAT ── -->
+  <a href="https://wa.me/50374163834" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    WhatsApp
+  </a>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
+
